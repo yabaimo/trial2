@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+.top-footer {
+    position: absolute;
+    width: 100%; 
+    background-color: #333; 
+    color: white; 
+    text-align: left;  
+    position: relative;
+    padding-bottom: 5px;
+}
+.top-footer p {
+    margin: 0;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+    background-color: #FFB90A8F !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+
+#logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 8px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+#logo-text img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+nav.scrolled ul li a {
+    color: black !important;
+}
+
+#home-logo{
+    color: white;
+}
+
+#home {
+    position: relative;
+    display: block;
+}
+#loginBtn{
+    margin-top: 30px;
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+    border-color: white;   
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.background {
+    background-image: url("background.png");
+    width: 100%;
+    height: 80vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#about{
+    display: none;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about-background{
+    background-image: url("background.png");
+    width: 100%;
+    height: 80vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 0;      
+}
+#first-paragraph{
+    color: white;
+    padding-top: 130px;
+    margin-bottom: 50px;
+    font-size: 90px;
+}
+
+#second-paragraph{
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+#home-button1{
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+}
+#home-button2{
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+}
+
+.home-content {
+    width: 100%;
+    height: 100rem;
+    background-color: white;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#shape{
+    width: 100vh;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute; 
+    top: 40vh; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 125px;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 0 20px; 
+    margin-top: 50px;
+}
+#burger{
+    margin-left: 20px;
+    height: 40vh;
+    width: 60vh;
+    border-radius: 125px;
+}
+#title-background{
+    color: #FFB649;
+}
+#burger-title {
+    margin-top: 10px;  
+    font-size: 2rem;
+    color: #FFB649;
+}
+
+#recent-post{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+#chami{
+    height: 300px;
+    width: 400px;
+    border-radius:50px;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+#taipao{
+    height: 300px;
+    width: 400px;
+    border-radius:50px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+#habhab{
+    height: 300px;
+    width: 400px;
+    border-radius:50px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+#recent-text{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-size: 70px;
+    font-family: 'DM sans';
+    letter-spacing: 5px;
+}
+
+#review-text{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    margin-top: 60px;
+    font-family: 'DM sans';
+    letter-spacing: 5px;
+}
+
+#recent-review{
+    margin-top: 130px;
+    display: flex;
+}
+
+#review-name{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.malupiton-review{
+    height: 470px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: #F3F3F3;
+    margin-left: 50px;
+    display: none;
+    
+}
+.malupiton-review, p {
+    font-size: 27px;
+    margin-right: 20px;
+}
+
+.malupiton{
+    margin-right: 250px;
+    border-radius: 100px;
+    height: 130px;
+    width: 130px;
+}
+#josh-review{
+    font-size: 20px;
+    margin-right: 20px;
+}
+#mima-review{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.footer{
+    background-color: rgba(222, 119, 63, 100);
+    color: white;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    padding-bottom: 0;
+}
+
+
+#footer-name{
+    margin-top: 10vh;
+    margin-left: 70px;
+    font-size: 60px;
+}
+#footer-text{
+    margin-left: 70px;
+    margin-top: 80px;
+    font-size: 15px;
+    font-family: 'DM Sans';
+    
+
+}
+#credits{
+    margin-top: 170px;
+    font-size: 25px;
+}
+#footer-page,p{
+    margin-top: 35px;
+    margin-left: 60px;
+    font-family: 'DM Sans';
+    font-size: 15px;
+    
+
+}
+
+#footer-header{
+    margin-top: 35px;
+    margin-left: 60px;
+    font-family: 'DM Sans';
+    font-size: 15px;
+}
+
+#footer-utility{
+    margin-top: 35px;
+    margin-left: 60px;
+    font-family: 'DM Sans';
+    font-size: 15px;
+}
+#footer-pics {
+    margin-top: 35px;
+    margin-left: 40px;
+    font-family: 'DM Sans';
+    font-size: 15px;
+    align-items: left;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#footer-pics img {   
+    border-radius: 25px;
+    border: 2px solid #A2DD42;
+    width: 150px;  
+    height: 150px; 
+}
+
+#insta-image {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; 
+}
+
+#siopao {
+    width: 200px;  
+    height: 130px; 
+}
+#foot-text{
+    padding-bottom: 20px;
+}
+
+#about-content{
+    height: 80rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+#menu{
+    display: none;
+}
+
+
+.background-menu{
+    background-image: url("background.png");
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#menu-content{
+    height: 70rem;
+    width: 100%;
+    text-align: center;
+}
+#pages{
+    display: none;
+}
+#pages-content{
+    height: 80rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+#contact{
+    display: none;
+}
+#contact-content{
+    height: 70rem;
+    width: 100%;
+    text-align: center;
+}
+#pages-text{
+    color: white;
+    padding-top: 170px;
+    padding-left: 25%;
+    text-align: left;
+}
+
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 35px; 
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0,0,0);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFB90A;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9a00;
+}
+
+.signup-link {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.signup-link a {
+    color: #FFB90A;
+    text-decoration: none;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+  

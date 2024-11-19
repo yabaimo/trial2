@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <title>Hacienda Inn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger-menu">&#9776;</div>
+            <ul id="nav-links">
+                <i id="logo-text">
+                    <img src="menu-pics/hacienda-inn-logo.png" alt="hacienda-inn-logo">
+                    <b>Hacienda Inn</b>
+                </i>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="loginBtn">Book a table</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="top-footer">
+            <p>&copy; 2024 Hacienda Inn | All Rights Reserved</p>
+        </div>
+        <div class="background">
+            <div id="shape">
+              <button id="home-button1" class="btn" onclick="changeImage(-1)"> < </button>
+              <img src="pictures/burger-menu.jpg" alt="burger" id="burger" class="carousel-image">
+              <img src="pictures/chami.jpg" alt="burger" id="burger" class="carousel-image">
+              <img src="pictures/taipao.png" alt="burger" id="burger" class="carousel-image">
+              <button id="home-button2" class="btn" onclick="changeImage(1)">></button>
+            </div>
+        </div>
+
+        <div class="home-content">
+            <h1 id="recent-text"> Recent post </h1>
+
+            <div id="recent-post">
+                <img src="pictures\chami.jpg" alt="chami" id="chami">
+                <img src="pictures\taipao.png" alt="taipao" id="taipao">
+                <img src="pictures\habhab.jpg" alt="habhab" id="habhab">
+            </div>
+
+            <h1 id="review-text">Pinned Review</h1>
+            <div id="recent-review">
+                <div class="malupiton-review">
+                    <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                    <h1 class="review-name">Malupiton</h1>
+                    <p>Great food and good <br>vibes! Perfect for laughs <br>with friends. Just don't be <br> shocked by the bill!</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                    <h1 class="review-name">Jobert Rosh</h1>
+                    <p>Its beautiful place.. lovely <br>creative tasty Chami.. <br>Siopao are die for.. Even <br>
+                    with 1kg you can get Pancit Lucban.. I always <br>buy Chami there for any <br>function in my house.</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                    <h1 class="review-name">Mima Otlum</h1>
+                    <p>Has become my regular <br>place to buy chami <br>Wonderful 
+                    taste and <br>economical price <br>compared to other resto</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/josh.jpg" alt="josh" class="malupiton">
+                    <h1 class="review-name">Josh Mojica</h1>
+                    <p>Its a good place for a <br>budget foodie, things are <br>good i love
+                    the pancit and <br>the taipao and those dessert <br>is my choice here</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/beluga.jpg" alt="beluga" class="malupiton">
+                    <h1 class="review-name">Beluga</h1>
+                    <p>My favorite place. It has <br> fresh ingredients with <br>catalog which
+                    design you <br>what to put into your food. <br></p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/trevor.jpg" alt="Trevor" class="malupiton">
+                    <h1 class="review-name">Trevor</h1>
+                    <p>Good place to hang out with <br>friends & family....very <br>economical..good quality food <br>products....very decent staff <br>and nice environment</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/sonny.jpg" alt="Trevor" class="malupiton">
+                    <h1 class="review-name">Sonny side</h1>
+                    <p>Good people. And their food <br>products also very good. <br>Reasonable price. Customer <br>service is very good. Taste <br>also good. Am happy <br>to buy here .</p>
+                </div>
+
+                <div class="malupiton-review">
+                    <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                    <h1 class="review-name">Malupiton</h1>
+                    <p>Great food and good <br>vibes! Perfect for laughs <br>with friends. Just don't be <br> shocked by the bill!</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                    <h1 class="review-name">Jobert Rosh</h1>
+                    <p>Its beautiful place.. lovely <br>creative tasty Chami.. <br>Siopao are die for.. Even <br>
+                    with 1kg you can get Pancit Lucban.. I always <br>buy Chami there for any <br>function in my house.</p>
+                </div>
+            
+                <div class="malupiton-review">
+                    <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                    <h1 class="review-name">Mima Otlum</h1>
+                    <p>Has become my regular <br>place to buy chami <br>Wonderful 
+                    taste and <br>economical price <br>compared to other resto</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section id="about">
+        <div class="about-background">
+            <div class="top-footer">
+                <p>&copy; 2024 Hacienda Inn | All Rights Reserved</p>
+            </div>
+            <p id="first-paragraph"><b>Who We Are</b></p>
+            <p id="second-paragraph">The most important thing for us is to give you the <br>comfortable dining experience</p>
+        </div>  
+        
+        <div id="about-content">
+            <h1>This is the about content</h1>
+        </div>
+
+    </section>
+
+    <section id="menu">
+        <div class="background-menu">
+            <div class="top-footer">
+                <p>&copy; 2024 Hacienda Inn | All Rights Reserved</p>
+            </div>
+            <h1>Menu</h1>
+        </div>
+
+        <div id="menu-content">
+            <div class="menu-section">
+                <h2>Sandwiches</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="menu-pics\cheese-sandwich.jpg" alt="Cheese Sandwich">
+                        <p>Cheese Sandwich</p>
+                        <p>₱50.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="menu-pics\egg-sandwich.jpg" alt="Egg Sandwich">
+                        <p>Egg Sandwich</p>
+                        <p>₱50.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="menu-pics\ham-egg-sandwich.jpg" alt="Ham & Egg Sandwich">
+                        <p>Ham & Egg Sandwich</p>
+                        <p>₱60.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="menu-pics\hotdog-sandwich.jpg" alt="Hotdog Sandwich">
+                        <p>Hotdog Sandwich</p>
+                        <p>₱60.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="menu-pics\clubhouse-sandwich.jpg" alt="Clubhouse Sandwich">
+                        <p>Clubhouse Sandwich</p>
+                        <p>₱80.00</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="menu-pics\chicken-sandwich.jpg" alt="Chicken Sandwich">
+                        <p>Chicken Sandwich</p>
+                        <p>₱50.00</p>
+                </div>
+            </div>
+        
+            <div class="drink-section">
+                <h2>Drinks</h2>
+                <div class="drink-items">
+                    <div class="drink-item">
+                        <img src="menu-pics\hot-coffee.jpg" alt="Hot Coffee">
+                        <p>Hot Coffee</p>
+                        <p>₱25.00</p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Hot-Tea.jpg" alt="Hot Tea">
+                        <p>Hot Tea</p>
+                        <p>₱25.00</p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Milk-Hot-Cold.jpg" alt="Milk Hot/Cold">
+                        <p>Milk Hot/Cold</p>
+                        <p>₱28.00</p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Ice-tea.jpg" alt="Ice Tea">
+                        <p>Iced tea</p>
+                        <p>₱60.00</p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Pineapple-Juice.jpg" alt="Pineapple Juice">
+                        <p>Pineapple Juice</p>
+                        <p>₱70.00</p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Mango-Juice.jpg" alt="Mango Juice">
+                        <p>Mango Juice</p>
+                        <p><b>₱90.00</b></p>
+                    </div>
+                    <div class="drink-item">
+                        <img src="menu-pics\Beer.jpg" alt="Beer">
+                        <p>Beer</p>
+                        <p><b>₱80.00</b></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="pages">
+        <div class="background">
+            <div class="top-footer">
+                <p>&copy; 2024 Hacienda Inn | All Rights Reserved</p>
+            </div>
+            <p id="pages-text">"Welcome to Hacienda Inn Blog, where flavor meets <br>inspiration! Here, we share more than just recipes; we bring
+                <br>you behind the scenes of our kitchen introduce you to our <br>culinary team, and offer a taste 
+                of the stories behind our <br>dishes. Each post is crafted with the same passion we put <br>into every meal
+                ,giving you a deeper connection to the food <br>we serve."</p>
+        </div>  
+        
+        <div id="pages-content">
+            <h1>This is the pages content</h1>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="background-menu">
+            <div class="top-footer">
+                <p>&copy; 2024 Hacienda Inn | All Rights Reserved</p>
+            </div>
+            <p id="first-paragraph">Contact Us</p>
+            <p id="second-paragraph">The most important thing for us is to give you the comfortable dining <br>experience</p>
+        </div>
+
+        <div id="contact-content">
+            <h1>this is the contact content</h1>
+        </div>
+
+    </section>
+    
+
+    <section id="login-form">
+        <!-- Login Form -->
+        <div class="login-container" id="loginFormContainer" style="display: none;">
+            <h2>Login</h2>
+            <div id="login-shape">
+                <form id="loginForm" onsubmit="return validateForm()">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                        <span id="usernameError" class="error-message"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <span id="passwordError" class="error-message"></span>
+                    </div>
+                    <div class="submit-group">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register</a></p>
+            </div>
+        </div>   
+
+        <!-- Registration Form -->
+        <div class="login-container" id="registrationFormContainer" style="display: none;">
+            <h2>Register</h2>
+            <form id="registrationForm" onsubmit="return validateRegistrationForm()">
+                <div class="input-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" name="email" required>
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="regUsername">Username</label>
+                    <input type="text" id="regUsername" name="username" required>
+                    <span id="regUsernameError" class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" name="password" required>
+                    <span id="regPasswordError" class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span id="confirmPasswordError" class="error-message"></span>
+                </div>
+                <div class="submit-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+    </section>
+    
+    
+
+    </section>
+    <footer class="footer">
+        <div>
+            <h1 id="footer-name">Hacienda<br>Inn.</h1>
+            <p id="footer-text">In the new era of technology we look in<br>the future with centainty
+            and pride for <br>our company</p>
+            <p id="credits">© 2024 Inc. All rights Reserved</p>
+        </div>
+        
+        <div id="footer-page">
+            <p id="footer-header"><b>Pages</b></p>
+            <p>Home</p>
+            <p>About</p>
+            <p>Menu</p>
+            <p>Pricing</p>
+            <p>Blog</p>
+            <p>Contact</p>
+            <p>Delivery</p>
+        </div>
+        <div id="footer-utility">
+            <p id="footer-header"><b>Utility pages</b></p>
+            <p>Start here</p>
+            <p>Password Protected</p>
+            <p>404 not found</p>
+            <p>License</p>
+            <p>View more</p>
+        </div>
+        <div id="footer-pics">
+            <p id="foot-text"><b>Follow us on Instagram</b></p>
+            <div id="insta-image">
+                <img src="pictures/footer-habhab.jpeg" alt="habhab">
+                <img src="pictures/footer-chami.jpg" alt="chami">
+            </div>
+            <div id="insta-image">
+                <img src="pictures\footer-bbq.jpg" alt="bbq">
+                <img src="pictures\footer-siopao.jpg" alt="Siopao" id="siopao">
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
